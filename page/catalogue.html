@@ -16,7 +16,22 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>MusicMaker</title>
     <style>
-   
+    body{
+    margin:0;
+    padding: 0;
+    line-height: 3;
+    font-size: 16px;}
+    body::before {
+    content: '';
+    position: inherit; /* Фиксируем на одном месте */
+    left: 0; right: 0; /* Вся ширин */
+    top: 0; bottom: 0; /* Вся высота */
+    z-index: -1; /* Фон ниже текста */
+    /* Параметры фона */
+    background: url(photo\background.png) center / cover no-repeat;
+    filter: blur(20px); /* Размытие */
+    
+}
 
             </style>
 </head>
@@ -39,7 +54,7 @@
       </script>
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
     <div id="header">
-        <img src="https://lh3.googleusercontent.com/ZUJH_J8TpQR9WZDB6kqUWHZvRQuRrqRjrjwAeAaKBREz1D_kSemY1Z6SnGHFqiqMbfC-9og=s85">
+        <img src="photo\logo.png">
     <a class="navbar-brand" href="../index.html">Главная</a></div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
