@@ -422,17 +422,7 @@ body{
         text-align: center; /* Выравнивание по левому краю */
         margin: 20%; /* Отступы вокруг картинки */
    }
-   body::before {
-    content: '';
-    position: fixed; /* Фиксируем на одном месте */
-    left: 0; right: 0; /* Вся ширин */
-    top: 0; bottom: 0; /* Вся высота */
-    z-index: -1; /* Фон ниже текста */
-    /* Параметры фона */
-    background: url(photo/backgroung.png) center ;
-    filter: blur(20px); /* Размытие */
-    
-}
+ 
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 .social a {
   text-align: center;
