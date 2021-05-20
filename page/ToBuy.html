@@ -19,15 +19,21 @@
     <title>MusicMaker</title>
     <link href="css/wicart.css" type="text/css" rel="stylesheet">
     <style>
-       body::before {
+        body::before {
+        margin:0;
+    padding: 0;
+    line-height: 3;
+    font-size: 16px;
     content: '';
     position: fixed; /* Фиксируем на одном месте */
     left: 0; right: 0; /* Вся ширин */
     top: 0; bottom: 0; /* Вся высота */
     z-index: -1; /* Фон ниже текста */
     /* Параметры фона */
-    background: url(photo/background.png) center / cover no-repeat;
+    background-image: url(photo/background.png) center;
     filter: blur(20px); /* Размытие */
+    
+}
     
 }
 body {
